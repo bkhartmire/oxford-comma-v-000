@@ -5,13 +5,11 @@ def oxford_comma(array)
     return "#{array[0]} and #{array[1]}"
   else
     new_string = ""
-    counter = 1
-    while counter < array.size
-      string = array.join(", ")
-      counter += 1
-    end
+    last_item = array.pop
+    string = array.join(", ")
+    counter += 1
     new_string << string
-    new_string << " and #{array.last}"
+    new_string << " and #{last_item}"
     return new_string
   end
 end
