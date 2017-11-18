@@ -10,7 +10,7 @@ def oxford_comma(array)
       string = array.join(", ")
       counter += 1
     end
-    new_string << string 
+    new_string << string
     new_string << " and #{array.last}"
   end
 end
