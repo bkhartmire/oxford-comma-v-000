@@ -3,7 +3,7 @@ def oxford_comma(array)
     return array[0]
   elsif array.size == 2
     return "#{array[0]} and #{array[1]}"
-  else 
+  else
     new_string = ""
     counter = 0
     while counter < array.size
