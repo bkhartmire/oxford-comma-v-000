@@ -6,7 +6,7 @@ def oxford_comma(array)
   else
     new_string = ""
     counter = 0
-    while counter < array.size
+    while counter < array.size-1
       string = array.join(", ")
       counter += 1
     end
